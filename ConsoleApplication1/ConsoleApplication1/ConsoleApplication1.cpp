@@ -5,13 +5,6 @@
 int main()
 {
     bitmap_image image("test.bmp");
-
-    if (!image)
-    {
-        printf("B³¹d ");
-        return 1;
-    }
-
     image.invert_color_planes();
     image.save_image("test_negative.bmp");
 
